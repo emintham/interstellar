@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>加拿大星际留学咨询公司</title>
+
+    <!-- styles -->
+    {% style "/assets/bootstrap/css/bootstrap.min.css" %}
+    {% style "/assets/bootstrap/css/bootstrap-theme.min.css" %}
+    {% style "/css/style.css" %}
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+        {% include "navbar.html" %}
+
+        <div class="container">
+          <div class="tab-content">
+            {% block content %}
+            {% endblock %}
+          </div> <!-- tab-content -->
+        </div>
+
+        </div> <!-- cover-container -->
+      </div> <!-- site-wrapper-inner -->
+    </div> <!-- site-wrapper -->
+
+    <!-- scripts -->
+    {% script "/assets/jquery/jquery.min.js" %}
+    {% script "/assets/bootstrap/js/bootstrap.min.js" %}
+
+    <script type="text/javascript">
+      var context = "{{servlet-context}}";
+    </script>
+    {% block page-scripts %}
+    {% endblock %}
+  </body>
+</html>
