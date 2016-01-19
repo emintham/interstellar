@@ -15,7 +15,6 @@ a:hover {
 .btn-default:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
   border: 1px solid #fff;
 }
 
@@ -124,7 +123,15 @@ html {
   padding: 10px 20px;
   font-weight: bold;
 }
-
+.content {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.content > ol,
+.content > ul {
+  text-align: left;
+}
 
 /*
  * Footer

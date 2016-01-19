@@ -3,7 +3,6 @@
             [bouncer.validators :as v]
             [clojure.tools.logging :as log]
             [interstellar.utils :refer [settings]]
-            [java.text.DateFormat :refer [getDateInstance FULL]]
             [postal.core :refer [send-message]]
             [ring.util.response :refer [redirect]]))
 
@@ -24,7 +23,9 @@
 ;;; Functions
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn make-sender-notification [username email message]
-  (let [chinese-date (.format (getDateInstance FULL (java.util.Local. "zh"))
+  (let [chinese-date (.format (java.text.DateFormat/getDateInstance
+                                java.text.DateFormat/FULL
+                                (java.util.Locale. "zh"))
                               (java.util.Date.))]
     {:from (settings :from_email)
      :to [email]
