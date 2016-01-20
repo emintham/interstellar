@@ -36,6 +36,15 @@
 
     <script type="text/javascript">
       var context = "{{servlet-context}}";
+
+      $('.next-step').click(function (e) {
+
+          var nextTab = $('li.active').find('a').data('next'),
+              selector = 'a[href="' + nextTab + '"]';
+
+          $(selector).tab('show');
+      });
+
     </script>
     {% block page-scripts %}
     {% endblock %}
