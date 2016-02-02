@@ -58,13 +58,14 @@ html {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+  background-color: rgba(3, 3, 3, 0.6);
+  height: 80%;
 }
 
 /* Padding for spacing */
 .inner {
   padding: 30px;
 }
-
 
 /*
  * Header
@@ -127,6 +128,7 @@ html {
   width: 50%;
   margin: 0 auto;
   padding-top: 20px;
+  vertical-align: middle;
 }
 .content > ol,
 .content > ul {
