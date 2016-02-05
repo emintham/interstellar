@@ -7,7 +7,7 @@
 
 (defn home-page [request]
   (layout/render
-    "home.html" {}))
+    "new_base.html" {}))
 
 (defroutes home-routes
   (GET "/" request (home-page request))

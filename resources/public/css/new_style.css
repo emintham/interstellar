@@ -1,0 +1,149 @@
+body {
+  text-align: center;
+  background: url("../img/star1-min.jpeg") no-repeat center fixed;
+  margin: 0;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  margin: -21px 0 4% 0;
+  padding-top: 25px;
+}
+
+header > h1 {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.pages {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.page {
+  margin-bottom: 10%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+.page > h2 {
+  padding: 3% 10%;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.page-content {
+  padding: 2% 5%;
+}
+
+#canada > h2{
+  background: linear-gradient(
+      to right,
+      #ffa82e,
+      #ffa82e 20%,
+      #ffb347 20%,
+      #ffb347 40%,
+      #ffbe61 40%,
+      #ffbe61 60%,
+      #ffc87a 60%,
+      #ffc87a 80%,
+      #ffd394 80%
+  );
+}
+
+#foo > h2 {
+  background: linear-gradient(
+      to right,
+      #4be5d3,
+      #4be5d3 20%,
+      #61e8d8 20%,
+      #61e8d8 40%,
+      #77ebdd 40%,
+      #77ebdd 60%,
+      #8eeee3 60%,
+      #8eeee3 80%,
+      #a4f2e8 80%
+  );
+}
+
+#flow > h2{
+  background: linear-gradient(
+      to right,
+      #ff5148,
+      #ff5148 20%,
+      #ff6961 20%,
+      #ff6961 40%,
+      #ff817b 40%,
+      #ff817b 60%,
+      #ff9994 60%,
+      #ff9994 80%,
+      #ffb2ae 80%
+  );
+}
+
+#contact > h2 {
+  /*
+  background: linear-gradient(
+      to right,
+      #fff476,
+      #fff476 20%,
+      #fff68f 20%,
+      #fff68f 40%,
+      #fff8a9 40%,
+      #fff8a9 60%,
+      #fffac2 60%,
+      #fffac2 80%,
+      #fffcdc 80%
+  );
+  */
+  background: linear-gradient(
+      to right,
+      #3db9ff,
+      #3db9ff 20%,
+      #56c2ff 20%,
+      #56c2ff 40%,
+      #70cbff 40%,
+      #70cbff 60%,
+      #89d4ff 60%,
+      #89d4ff 80%,
+      #a3deff 80%
+  );
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group > label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-group > textarea {
+  font-family: inherit;
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  width: 80%;
+}
+
+form > .btn {
+  background-color: #e94f8f;
+  border-radius: 14px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 900;
+  height: 28px;
+  line-height: 26px;
+  margin-top: 10px;
+  width: 125px;
+}
+
+form > .btn:hover {
+  background-color: #d11a66;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+    <head>
+
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <META name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>加拿大星际留学咨询公司</title>
+
+        {% style "/css/new_style.css" %}
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>加拿大星际留学咨询公司</h1>
+        </header>
+
+        <div class="pages">
+
+            <article class="page" id="canada">
+                <h2>加拿大教育简介</h2>
+
+                <div class="page-content">
+                    <p>
+                        加拿大的教育花费占了国内生产总值(GDP)的8%左右.在全国各省,所有孩子,包括
+                        定居和暂居加拿大的都必须接受全日制教育.除了魁北克以法语教学以外,其余
+                        各省均以英文为学校的主要语言.
+                    </p>
+
+                    <ul>
+                        <li>初级幼儿园： 4岁</li>
+                        <li>高级幼儿园： 5岁</li>
+                        <li>小学（1年级至6年级） ： 6岁至11岁</li>
+                        <li>初中（7年级至9年级） ： 12岁至14岁</li>
+                        <li>高中（10年级至12年级） ： 15岁至18岁</li>
+                    </ul>
+                </div> <!-- page-content -->
+            </article> <!-- canada -->
+
+            <!--
+            <article class="page" id="foo">
+                <h2>加拿大教育简介</h2>
+
+                <div class="page-content">
+                    <p>
+                        加拿大的教育花费占了国内生产总值(GDP)的8%左右.在全国各省,所有孩子,包括
+                        定居和暂居加拿大的都必须接受全日制教育.除了魁北克以法语教学以外,其余
+                        各省均以英文为学校的主要语言.
+                    </p>
+
+                    <ul>
+                        <li>初级幼儿园： 4岁</li>
+                        <li>高级幼儿园： 5岁</li>
+                        <li>小学（1年级至6年级） ： 6岁至11岁</li>
+                        <li>初中（7年级至9年级） ： 12岁至14岁</li>
+                        <li>高中（10年级至12年级） ： 15岁至18岁</li>
+                    </ul>
+                </div> <!-- page-content -->
+            </article> <!-- foo -->
+            -->
+
+            <article class="page" id="flow">
+                <h2>基本流程</h2>
+
+                <div class="page-content">
+                    <ol>
+                        <li>根据孩子和家庭的情况选择合适的学校</li>
+                        <li>
+                            帮您与学校沟通，填写报名表格<br />
+                            基本准备资料：
+                            <ol>
+                                <li>申请人及家长签字的报名申请表</li>
+                                <li>公证过的成绩单</li>
+                                <li>公证过的 在读证明 或 毕业证</li>
+                                <li>雅思或托福成绩（非必要的）</li>
+                                <li>报名费</li>
+                            </ol>
+                        </li>
+                        <li>等待学校回复 （约2周-3个月）</li>
+                        <li>收到录取通知书</li>
+                        <li>缴纳学费</li>
+                        <li>帮孩子办理学生签证 （约1个月-3个月）<br />
+                            如有需要，可以帮您办理陪读签证</li>
+                        <li>帮孩子申请住宿及安排接机</li>
+                        <li>您的孩子可以到学校报到并入学，开始享受愉快的留学时光</li>
+                        <li>在留学过程中如有疑惑需要帮助，同样可以联系我们</li>
+                    </ol>
+
+                    <p>
+                        注意: 若您计划在即将到来的学年入学,申请资料必须在5月31日前(9月开课/第一学期)
+                        或11月30日前(2月开课/第二学期)集齐呈上
+                    </p>
+                </div> <!-- page-content -->
+            </article> <!-- flow -->
+
+            <article class="page" id="contact">
+                <h2>联系我们</h2>
+
+                <div class="page-content">
+                    <form method="POST" action="/">
+                        {% csrf-field %}
+
+                        <div class="form-group">
+                            <label for="name">姓名*</label>
+                            <input class="form-control"
+                                   type="text"
+                                   id="name"
+                                   placeholder="姓名"
+                                   name="name"
+                                   value="{{name}}" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">电邮*</label>
+                            <input class="form-control"
+                                   type="email"
+                                   id="email"
+                                   placeholder="abc@weixin.com"
+                                   name="email"
+                                   value="{{email}}" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">留言*</label>
+                            <textarea class="form-control"
+                                      id="message"
+                                      placeholder="留言"
+                                      rows="4"
+                                      cols="50"
+                                      name="message">{{message}}</textarea>
+                        </div>
+
+                        <button type="submit" class="btn" value="comment">提交</button>
+                    </form>
+                </div> <!-- page-content -->
+            </article> <!-- contact -->
+
+        </div> <!-- pages -->
+
+    </body>
+
+</html>
