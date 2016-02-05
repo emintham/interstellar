@@ -40,7 +40,7 @@
    :to [(settings :to_email)]
    :subject (str "Question from " username "(" email ")")
    :body message})
-  
+
 
 (def email-settings
   {:host (settings :smtp)
@@ -65,5 +65,5 @@
       (redirect "/"))
     (do
       (let [{:keys [name email message]} params]
-        (send-emails name email message))
+        (future (send-emails name email message)))
       (redirect "/"))))
